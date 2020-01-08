@@ -1,0 +1,23 @@
+@import "../../scss/base";
+
+.service-card {
+  border: 1px solid $color-primary;
+  margin-bottom: 25px;
+  padding: 25px;
+  text-align: center;
+  &:nth-child(odd) {
+    box-shadow: 15px 25px $color-secondary;
+  }
+  &:nth-child(even) {
+    box-shadow: -15px -25px $color-secondary;
+  }
+  header {
+      img{
+      width: 150px;
+    }
+    h2{
+      font-size: 24px;
+    }
+  }
+
+}

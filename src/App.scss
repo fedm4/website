@@ -2,11 +2,12 @@
 
 body{
   background-color: $color-text-opposite;
-  font-family: 'Noto Serif', Serif;
+  font-family: $font-texts, Serif;
   font-size: 16px;
 }
 h1,h2,h3,h4,h5,h6, .title-fonts {
-  font-family: 'Oxygen', Sans-Serif;
+  font-family: $font-title, Sans-Serif;
+  font-weight: 300;
   text-transform: uppercase;
 }
 .main {

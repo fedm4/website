@@ -2,14 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="27e91350-65ac-4a6f-aa66-d8be1f761a5c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MainNav/MainNav.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainNav/MainNav.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/AboutMe/AboutMe.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/AboutMe/AboutMe.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/AboutMe/AboutMe.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/AboutMe/AboutMe.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/_base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_base.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/common/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/common/_variables.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +34,11 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
+    </key>
+  </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
       <list>
@@ -55,7 +61,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1578424133577</updated>
-      <workItem from="1578424135761" duration="6758000" />
+      <workItem from="1578424135761" duration="9693000" />
+      <workItem from="1578447509011" duration="3828000" />
     </task>
     <servers />
   </component>
@@ -71,13 +78,13 @@
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="274" y="85" key="SettingsEditor/0.0.1600.900@0.0.1600.900" timestamp="1578429886716" />
-    <state x="464" y="202" key="run.anything.popup" timestamp="1578427511054">
+    <state x="464" y="202" key="run.anything.popup" timestamp="1578451353249">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state x="464" y="202" key="run.anything.popup/0.0.1600.900@0.0.1600.900" timestamp="1578427511054" />
-    <state x="463" y="194" width="672" height="678" key="search.everywhere.popup" timestamp="1578427522190">
+    <state x="464" y="202" key="run.anything.popup/0.0.1600.900@0.0.1600.900" timestamp="1578451353249" />
+    <state x="463" y="194" width="672" height="678" key="search.everywhere.popup" timestamp="1578447955821">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state x="463" y="194" width="672" height="678" key="search.everywhere.popup/0.0.1600.900@0.0.1600.900" timestamp="1578427522190" />
+    <state x="463" y="194" width="672" height="678" key="search.everywhere.popup/0.0.1600.900@0.0.1600.900" timestamp="1578447955821" />
   </component>
 </project>

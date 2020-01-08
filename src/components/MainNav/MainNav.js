@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import "./MainNav.scss";
 
@@ -12,7 +13,7 @@ const MainNav = () => {
         },
         {
             key: "nav-2",
-            link: "#",
+            link: "/services",
             label: "Services"
         },
         {
@@ -29,7 +30,7 @@ const MainNav = () => {
 
     const navItem = item =>{
         return (
-            <a className="nav-item title-fonts" href={item.link} key={item.key}><span>{item.label}</span></a>
+            <Link className="nav-item title-fonts" to={item.link} key={item.key}><span>{item.label}</span></Link>
         );
     };
 

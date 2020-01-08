@@ -2,7 +2,7 @@
 
 .title {
   color: $color-primary;
-  font-size: 24px;
+  font-size: 30px;
   letter-spacing: 4px;
 }
 .title-underline {
@@ -17,6 +17,10 @@
     position: absolute;
     width: 100%;
   }
+}
+
+.content-section {
+  padding: 25px;
 }
 
 .content {
