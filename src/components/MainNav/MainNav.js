@@ -16,14 +16,14 @@ const MainNav = () => {
             link: "/services",
             label: "Services"
         },
-        {
-            key: "nav-3",
-            link: "#",
-            label: "Portfolio"
-        },
+        //{
+        //    key: "nav-3",
+        //    link: "#",
+        //    label: "Portfolio"
+        //},
         {
             key: "nav-4",
-            link: "#",
+            link: "/contact",
             label: "Contact"
         }
     ];

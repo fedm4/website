@@ -1,1 +1,8 @@
 @import "../../scss/base";
+
+.content{
+  @include tablet() {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

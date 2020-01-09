@@ -15,6 +15,26 @@ const Services = () =>{
             icon: "coding.svg",
             title: "FrontEnd Development",
             body: "FrontEnd Development focused on the interactions and the design of the page for you or your clients to feel comfortable and engaged while navigating through the depths of the cthulhean sea, as far as the black skies allow us."
+        },
+        {
+            icon: "browser.svg",
+            title: "Browser",
+            body: "Browser is the way to go, dude!"
+        },
+        {
+            icon: "connection.svg",
+            title: "Connection",
+            body: "Connection is the real stuff in connecting stuff"
+        },
+        {
+            icon: "layers.svg",
+            title: "Layers",
+            body: "So many layers of complexity will win me money"
+        },
+        {
+            icon: "seo-and-web.svg",
+            title: "SEO and Web",
+            body: "SEO is a tool. Web is a tool. I do both."
         }
     ];
     return (

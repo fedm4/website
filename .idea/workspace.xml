@@ -3,14 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="27e91350-65ac-4a6f-aa66-d8be1f761a5c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/MainNav/MainNav.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainNav/MainNav.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/AboutMe/AboutMe.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/AboutMe/AboutMe.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/AboutMe/AboutMe.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/AboutMe/AboutMe.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/_base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_base.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/common/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/common/_variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ServiceCard/ServiceCard.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ServiceCard/ServiceCard.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Services/Services.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Services/Services.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Services/Services.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Services/Services.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/common/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/common/_mixins.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +61,7 @@
       <updated>1578424133577</updated>
       <workItem from="1578424135761" duration="9693000" />
       <workItem from="1578447509011" duration="3828000" />
+      <workItem from="1578592809371" duration="2513000" />
     </task>
     <servers />
   </component>
@@ -70,10 +69,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="464" y="255" width="661" height="388" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1578428120691">
+    <state x="464" y="255" width="681" height="388" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1578596980353">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state x="464" y="255" width="661" height="388" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1600.900@0.0.1600.900" timestamp="1578428120691" />
+    <state x="464" y="255" width="681" height="388" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1600.900@0.0.1600.900" timestamp="1578596980353" />
     <state x="274" y="85" key="SettingsEditor" timestamp="1578429886716">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
