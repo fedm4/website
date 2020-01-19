@@ -5,7 +5,7 @@ const ServiceCard = props => {
     return (
         <article key={props.title} className="service-card">
             <header>
-                <img src={`images/icons/${props.icon}`} />
+                <img src={props.icon} />
                 <h2>{props.title}</h2>
             </header>
             <p>

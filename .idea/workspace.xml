@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="27e91350-65ac-4a6f-aa66-d8be1f761a5c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pages/Services/icons/analytics.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Services/icons/browser.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Services/icons/coding.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Services/icons/connection.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Services/icons/layers.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Services/icons/seo-and-web.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Services/Services.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Services/Services.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ServiceCard/ServiceCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ServiceCard/ServiceCard.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,11 +12,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/Services/Services.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="638">
               <caret line="41" column="25" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/ServiceCard/ServiceCard.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="112">
+              <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -40,6 +45,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/pages/Services/Services.js" />
+        <option value="$PROJECT_DIR$/src/components/ServiceCard/ServiceCard.js" />
       </list>
     </option>
   </component>
@@ -71,22 +77,20 @@
               <item name="fede-pagina" type="b2602c69:ProjectViewProjectNode" />
               <item name="fede-pagina" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fede-pagina" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fede-pagina" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="ServiceCard" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="fede-pagina" type="b2602c69:ProjectViewProjectNode" />
               <item name="fede-pagina" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="Services" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fede-pagina" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fede-pagina" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="Services" type="462c0819:PsiDirectoryNode" />
-              <item name="icons" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -152,12 +156,12 @@
       <workItem from="1578753131703" duration="4000" />
       <workItem from="1578753215103" duration="7000" />
       <workItem from="1578761024265" duration="18000" />
-      <workItem from="1579476828690" duration="260000" />
+      <workItem from="1579476828690" duration="406000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="260000" />
+    <option name="totallyTimeSpent" value="406000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1600" height="869" extended-state="6" />
@@ -209,6 +213,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="638">
           <caret line="41" column="25" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ServiceCard/ServiceCard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
