@@ -3,12 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="27e91350-65ac-4a6f-aa66-d8be1f761a5c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MainNav/MainNav.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainNav/MainNav.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ServiceCard/ServiceCard.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ServiceCard/ServiceCard.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Services/Services.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Services/Services.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Services/Services.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Services/Services.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/common/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/common/_mixins.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +55,10 @@
       <updated>1578424133577</updated>
       <workItem from="1578424135761" duration="9693000" />
       <workItem from="1578447509011" duration="3828000" />
-      <workItem from="1578592809371" duration="2513000" />
+      <workItem from="1578592809371" duration="3156000" />
+      <workItem from="1578753131703" duration="4000" />
+      <workItem from="1578753215103" duration="7000" />
+      <workItem from="1578761024265" duration="18000" />
     </task>
     <servers />
   </component>
