@@ -14,13 +14,18 @@
   }
   header {
       img{
-      width: 150px;
+      width: 100px;
     }
     h2{
-      font-size: 24px;
+      font-size: 20px;
     }
   }
+  p{
+    font-size: 18px;
+  }
   @include tablet(){
-    width: 450px;
+    margin: 25px 0;
+    width: 300px;
+    justify-self: center;
   }
 }

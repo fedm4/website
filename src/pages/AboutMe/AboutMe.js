@@ -1,5 +1,6 @@
 import React from "react";
-
+import Fedetc from './img/fedetc.jpg';
+import FedeClase2 from './img/fedeclase2.jpeg';
 import "./AboutMe.scss";
 
 const AboutMe = () => {
@@ -8,9 +9,15 @@ const AboutMe = () => {
             <h1 className="title"><span className="title-underline">Abou</span>t Me</h1>
             <article className="content">
                 <p>
+                    <div className="image-container left">
+                        <img className="image" alt="" src={Fedetc} loading="lazy" />
+                    </div>
                     Hi! I'm Federico and I have 10+ years of experience in software, designing and creating solutions that can help businesses grow, coming either from a client's idea, or a research of what tool can be the next step for the company to expand, reduce costs and automate processes.
                 </p>
                 <p>
+                    <div className="image-container right">
+                        <img className="image" src={FedeClase2} loading="lazy" />
+                    </div>
                     My experience goes from fin tech and e-commerce to tourism and telecommunications, including insurance and marketing.
                     I'm currently teaching front-end development, focused on react, on a non governmental organization.
                 </p>
