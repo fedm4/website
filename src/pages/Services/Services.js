@@ -32,7 +32,7 @@ const Services = () =>{
             icon: ConnectionIcon,
             title: "Application Design",
             body: "I can help you design the application you imagine, with the technical knowledge to help you make decisions based on what's best for your app."
-        },
+        }, 
         /*{
             icon: LayerIcon,
             title: "Layers",
