@@ -1,28 +1,30 @@
 {
   "files": {
-    "main.css": "/business-page/static/css/main.52eb6f33.chunk.css",
-    "main.js": "/business-page/static/js/main.828573b9.chunk.js",
-    "main.js.map": "/business-page/static/js/main.828573b9.chunk.js.map",
+    "main.css": "/business-page/static/css/main.3106fce6.chunk.css",
+    "main.js": "/business-page/static/js/main.bac5a0cf.chunk.js",
+    "main.js.map": "/business-page/static/js/main.bac5a0cf.chunk.js.map",
     "runtime-main.js": "/business-page/static/js/runtime-main.ff3e781a.js",
     "runtime-main.js.map": "/business-page/static/js/runtime-main.ff3e781a.js.map",
-    "static/js/2.b8ebb125.chunk.js": "/business-page/static/js/2.b8ebb125.chunk.js",
-    "static/js/2.b8ebb125.chunk.js.map": "/business-page/static/js/2.b8ebb125.chunk.js.map",
+    "static/js/2.360fac81.chunk.js": "/business-page/static/js/2.360fac81.chunk.js",
+    "static/js/2.360fac81.chunk.js.map": "/business-page/static/js/2.360fac81.chunk.js.map",
     "index.html": "/business-page/index.html",
-    "precache-manifest.33cebabd89dba832997031f4db0c14ac.js": "/business-page/precache-manifest.33cebabd89dba832997031f4db0c14ac.js",
+    "precache-manifest.493068771f411908dfc81d9794aa2cdf.js": "/business-page/precache-manifest.493068771f411908dfc81d9794aa2cdf.js",
     "service-worker.js": "/business-page/service-worker.js",
-    "static/css/main.52eb6f33.chunk.css.map": "/business-page/static/css/main.52eb6f33.chunk.css.map",
-    "static/js/2.b8ebb125.chunk.js.LICENSE": "/business-page/static/js/2.b8ebb125.chunk.js.LICENSE",
+    "static/css/main.3106fce6.chunk.css.map": "/business-page/static/css/main.3106fce6.chunk.css.map",
+    "static/js/2.360fac81.chunk.js.LICENSE": "/business-page/static/js/2.360fac81.chunk.js.LICENSE",
     "static/media/analytics.svg": "/business-page/static/media/analytics.434ee1b1.svg",
     "static/media/browser.svg": "/business-page/static/media/browser.8a3e25d8.svg",
     "static/media/coding.svg": "/business-page/static/media/coding.a0bc9e80.svg",
     "static/media/connection.svg": "/business-page/static/media/connection.1265199f.svg",
+    "static/media/fedeclase2.jpeg": "/business-page/static/media/fedeclase2.fd14a406.jpeg",
+    "static/media/fedetc.jpg": "/business-page/static/media/fedetc.33ff5d2f.jpg",
     "static/media/layers.svg": "/business-page/static/media/layers.fa0634ff.svg",
     "static/media/seo-and-web.svg": "/business-page/static/media/seo-and-web.29b1cb4d.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.ff3e781a.js",
-    "static/js/2.b8ebb125.chunk.js",
-    "static/css/main.52eb6f33.chunk.css",
-    "static/js/main.828573b9.chunk.js"
+    "static/js/2.360fac81.chunk.js",
+    "static/css/main.3106fce6.chunk.css",
+    "static/js/main.bac5a0cf.chunk.js"
   ]
 }
