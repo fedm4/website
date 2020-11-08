@@ -1,0 +1,13 @@
+@import "./base";
+
+.services{
+  max-width: 750px;
+  margin: 0 auto;
+}
+.content{
+  @include tablet() {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}

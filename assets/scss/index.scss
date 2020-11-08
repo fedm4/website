@@ -1,0 +1,38 @@
+@import "./base";
+
+.about-me {
+  max-width: 750px;
+  margin: 0 auto;
+  article {
+    .image-container{
+      width: 200px;
+      height: 200px;
+      overflow: hidden;
+      margin: 0 15px 30px;
+      transition: all 0.5s linear;
+      &:hover{
+        width: 230px;
+        height: 230px;
+      }
+      &.left {
+        float: left;
+        box-shadow: -25px 25px $color-info;
+        &:hover{
+          box-shadow: -1px 1px $color-info;
+        }
+      }
+      &.right {
+        float: right;
+        box-shadow: 35px 25px $color-secondary;
+        &:hover {
+          box-shadow: 1px 1px $color-secondary;
+        }
+      }
+      .image {
+        filter: hue-rotate(45deg);
+        margin-top: -35px;
+        max-width: 100%;
+      }
+    }
+  }
+}

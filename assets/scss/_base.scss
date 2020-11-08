@@ -1,0 +1,28 @@
+@import "./common/all";
+
+.title {
+  color: $color-primary;
+  font-size: 30px;
+  letter-spacing: 4px;
+}
+.title-underline {
+  //text-decoration: underline;
+  position: relative;
+  &:after{
+    border-bottom: 2px solid $color-primary;
+    bottom: -2px;
+    left: -1px;
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+  }
+}
+
+.content-section {
+  padding: 25px;
+}
+
+.content {
+  color: $color-text;
+}

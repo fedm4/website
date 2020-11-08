@@ -1,0 +1,33 @@
+@import "./base";
+
+.main-nav{
+  display: flex;
+  justify-content: center;
+  .nav-item{
+    border-top: 10px solid $color-primary;
+    color: $color-primary;
+    font-size: 19px;
+    padding: 15px;
+    position: relative;
+    text-decoration: none;
+    transition: all 0.3s linear;
+    &:after{
+      background: $color-primary;
+      content: '';
+      display: inline-block;
+      height: 100%;
+      position: absolute;
+      top: -55px;
+      transition: top 0.2s linear;
+      left: 0;
+      z-index: -1;
+      width: 100%;
+    }
+    &:hover, &:active {
+      color: $color-text-opposite;
+      &:after{
+        top: 0;
+      }
+    }
+  }
+}

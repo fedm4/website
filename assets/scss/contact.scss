@@ -1,0 +1,15 @@
+.contact {
+    max-width: 750px;
+    margin: 0 auto;
+    .content{
+        display: block;
+        .contact-data{
+            margin-bottom: 10px;
+            .svg-inline--fa{
+                vertical-align: middle;
+                font-size: 23px;
+                margin-right: 10px;
+            }
+        }
+    }
+}
