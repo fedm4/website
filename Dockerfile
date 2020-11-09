@@ -2,10 +2,12 @@ FROM node:14
 
 # Create app directory
 WORKDIR /app
-ADD . /app/
+ADD package*.json
 
 # global install & update
 RUN yarn install
+
+ADD . /app/
 
 RUN npm run build
 
