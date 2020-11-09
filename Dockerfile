@@ -2,7 +2,7 @@ FROM node:14
 
 # Create app directory
 WORKDIR /app
-ADD package*.json
+ADD package*.json ./
 
 # global install & update
 RUN yarn install
