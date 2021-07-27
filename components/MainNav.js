@@ -1,7 +1,8 @@
-import React from "react";
-import Link from 'next/link'
+import React, {useEffect} from "react";
+import Link from 'next/link';
+import { init } from "../helpers/CanvasHelper";
 
-const MainNav = () => {
+const MainNav = ({...ctx}) => {
 
     const navItemsData = [
         {
@@ -26,15 +27,20 @@ const MainNav = () => {
         }
     ];
 
-    const navItem = item =>{
+    const navItem = (item, index) =>{
         return (
-            <Link key={item.key} href={item.link}>
-                <a className="nav-item title-fonts">
+            <Link className="nav-link-main" key={item.key} href={item.link}>
+                <a className="nav-item title-fonts" data-number={index}>
                     <span>{item.label}</span>
                 </a>
             </Link>
         );
     };
+
+
+    useEffect(() => {            
+        init(ctx);
+    });
 
     return (
         <nav className="main-nav">
