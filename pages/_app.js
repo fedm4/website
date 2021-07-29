@@ -6,32 +6,20 @@ import "../assets/scss/ServiceCard.scss";
 import "../assets/scss/contact.scss";
 import "../assets/scss/services.scss";
 import "./_app.scss";
-
+import { init, reload, loadImages, setCtxAndCanvas, setClientSize } from "../helpers/CanvasHelper";
 import MainNav from "../components/MainNav";
 
 function MyApp({ Component, pageProps }) {
-  const [canvas, setCanvas] = useState();
-  const [ctx, setCtx] = useState();
-
-  useEffect(() => {
-    setCanvas(document.getElementById("canvas"));
-  });
-  useEffect(() => {
-    if(!canvas) return;
-    setCtx(canvas.getContext("2d"));
-  }, [canvas]);
-
+  
+  useEffect(() => init());
+  
   return (
     <div>
       <canvas id="canvas"></canvas>
-      {
-        !ctx ? 
-        null :
-        <React.Fragment>
-          <MainNav ctx={ctx} />
-          <Component {...pageProps} />
-        </React.Fragment> 
-      }
+      <React.Fragment>
+        <MainNav />
+        <Component {...pageProps} />
+      </React.Fragment> 
     </div>
   )
 }

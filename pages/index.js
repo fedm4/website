@@ -7,7 +7,7 @@ const index = () => {
             <article className="content">
                 <div>
                     <div className="image-container left">
-                        <img className="image" alt="" src="/img/fedetc.jpg" loading="lazy" />
+                        <img className="image" alt="" src="/img/fedetc.jpg"  />
                     </div>
                     <p>
                         Hi! I'm Federico and I have 10+ years of experience in software, designing and creating solutions that can help businesses grow, coming either from a client's idea, or a research of what tool can be the next step for the company to expand, reduce costs and automate processes.
@@ -20,7 +20,7 @@ const index = () => {
                 
                 <div>
                     <div className="image-container right">
-                        <img className="image" src="/img/fedeclase2.jpeg" loading="lazy" />
+                        <img className="image" src="/img/fedeclase2.jpeg" />
                     </div>
                     <p>
                         My technical knowledge varies from web applications development in both front-end as well as back-end, to micro services and lambda functions. I also have experience with web servers both designing, maintaining, and migrating data or entire systems from standard web servers to a cloud based system.

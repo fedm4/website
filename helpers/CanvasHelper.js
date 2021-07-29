@@ -1,7 +1,13 @@
 let activeItem =  -1;
-const itemMeasurements = [];
+let itemMeasurements = [];
+let initiated = false;
+let images = [];
+let req;
+let ctx;
+let canvas;
+let clientHeight = 0;
 
-class Particle {
+class NavParticle {
     constructor(x, y, size){
         this.x = x;
         this.y = y;
@@ -26,64 +32,136 @@ class Particle {
     }
 }
 
-const particlesArray = [];
+const cancelAnimation = () => req && cancelAnimationFrame(req);
 
-const handleParticles = ctx => {
-    for (let i = 0; i < particlesArray.length; i++){
-        particlesArray[i].update();
-        particlesArray[i].draw(ctx);
-        for(let j = i; j < particlesArray.length; j++){
-            const dx = particlesArray[i].x - particlesArray[j].x;
-            const dy = particlesArray[i].y - particlesArray[j].y;
+/** Nav Particles */
+const navParticlesArray = [];
+
+const clearItemMeasurements = () => itemMeasurements = [];
+const measureItems = () => document.querySelectorAll(".nav-item").forEach(item => itemMeasurements.push(item.getBoundingClientRect()));
+const handleMouseEnterNav = e => activeItem = e.target.dataset.number;
+const handleMouseLeaveNav = () => activeItem = -1;
+
+const startNavParticles = () => {
+    document.querySelectorAll(".nav-item")?.forEach(item => {
+        item.removeEventListener("mouseenter", handleMouseEnterNav);
+        item.removeEventListener("mouseleave", handleMouseLeaveNav);
+        item.addEventListener('mouseenter', handleMouseEnterNav);
+        item.addEventListener('mouseleave', handleMouseLeaveNav);
+    });
+}
+
+const handleNavParticles = () => {
+    for (let i = 0; i < navParticlesArray.length; i++){
+        navParticlesArray[i].update();
+        navParticlesArray[i].draw(ctx);
+        for(let j = i; j < navParticlesArray.length; j++){
+            const dx = navParticlesArray[i].x - navParticlesArray[j].x;
+            const dy = navParticlesArray[i].y - navParticlesArray[j].y;
             const distance = Math.sqrt(dx * dx + dy * dy);
             if(distance < 100) {
                 ctx.beginPath();
-                ctx.strokeStyle = particlesArray[i].color;
-                ctx.lineWidth = particlesArray[i].size/10;
-                ctx.moveTo(particlesArray[i].x, particlesArray[i].y);
-                ctx.lineTo(particlesArray[j].x, particlesArray[j].y);
+                ctx.strokeStyle = navParticlesArray[i].color;
+                ctx.lineWidth = navParticlesArray[i].size/10;
+                ctx.moveTo(navParticlesArray[i].x, navParticlesArray[i].y);
+                ctx.lineTo(navParticlesArray[j].x, navParticlesArray[j].y);
                 ctx.stroke();
                 ctx.closePath();
             }
         }
-        if (particlesArray[i].size <= 1) {
-            particlesArray.splice(i, 1);
+        if (navParticlesArray[i].size <= 1) {
+            navParticlesArray.splice(i, 1);
             i--;
         }
     }
 }
 
-export const animate = (ctx, canvas) => {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    ctx.lineWidth = 1;
+const addNavParticles = () => {
     if (activeItem > -1) {
         let size = Math.random() * 10 + 10;
         let x = Math.random() * (itemMeasurements[activeItem].width - size * 2) + itemMeasurements[activeItem].x + size;
         let y = itemMeasurements[activeItem].y + 65;
 
-        if(Math.round(Math.random() * 5 + 1) == 5) particlesArray.push(new Particle(x, y, size));
+        if(Math.round(Math.random() * 5 + 1) == 5) navParticlesArray.push(new NavParticle(x, y, size));
     }
-    handleParticles(ctx);
+}
+/** End Nav Particles */
 
-    requestAnimationFrame(() => animate(ctx, canvas));
+export const animate = (triggerImageChange) => {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.lineWidth = 1;
+    addNavParticles();
+    handleNavParticles(ctx);
+    drawImages(triggerImageChange);
+    req = requestAnimationFrame(() => animate(false));
+
 }
 
-const measureItems = () => document.querySelectorAll(".nav-item").forEach(item => itemMeasurements.push(item.getBoundingClientRect()));
-
-const defineCanvas = ctx => {
-    ctx.canvas.width = window.innerWidth;
-    ctx.canvas.height = window.innerHeight;
-    measureItems();
+const defineCanvas = () => {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
 };
 
-export const init = (ctx) => {
-    if(ctx.hasOwnProperty('ctx')) ctx = ctx.ctx;
+const drawImages = () => {
+    for(let image of images) {
+        ctx.drawImage(image.ImgObj, 
+            0, 200, // Start at 0 0 from top left of the image
+            image.ImgObj.width, image.ImgObj.width, // Crop to width square 
+            image.offsetLeft, image.offsetTop + 35, // Position at real offsetLeft and offsetTop + 35px to get correct height 
+            200, 200); // Scale to 200px
+    }
+};
 
-    document.querySelectorAll(".nav-item").forEach(item => {
-        item.addEventListener('mouseenter', () => activeItem = item.dataset.number);
-        item.addEventListener('mouseleave', () => activeItem = -1);
-    });
-    window.addEventListener('resize', () => defineCanvas(ctx)); 
-    defineCanvas(ctx);   
-    animate(ctx, ctx.canvas);
+const reloadCanvas = () => {
+    const cWidth = canvas.width;
+    const cHeight = canvas.height;
+    canvas.remove();
+    canvas = document.createElement("canvas");
+    canvas.width = cWidth;
+    canvas.height = cHeight;
+    document.body.appendChild(canvas);
+    ctx = canvas.getContext("2d");
+    reload();
+}
+
+const setResizeObserver = () => {
+    const resizeObserver = new ResizeObserver(entries => {
+        canvas.width = entries[0].target.clientWidth;
+        canvas.height = entries[0].target.clientHeight;
+        loadImages();
+        reload();
+      })
+      resizeObserver.observe(document.body);
+}
+
+export const loadImages = () => {
+    images = document.querySelectorAll(".image-container > img");
+    for(let image of images ) {
+        const img = new Image(); // Create new image to get real width and height
+        img.src = image.src;
+        image.ImgObj = img;
+    }
+}
+
+export const reload = () => {
+    if(!initiated) return;
+    cancelAnimation();
+    defineCanvas();
+    clearItemMeasurements();
+    measureItems();
+    startNavParticles();
+    animate();
+}
+
+export const setCtxAndCanvas = () => {
+    canvas = document.querySelector("canvas");
+    ctx = canvas.getContext("2d");
+}
+
+export const init = () => {
+    if(initiated) return;
+    initiated = true;
+    setCtxAndCanvas();
+    reload();
+    setResizeObserver();
 }
