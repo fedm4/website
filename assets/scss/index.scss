@@ -10,10 +10,10 @@
       overflow: hidden;
       margin: 0 15px 30px;
       transition: all 0.5s linear;
-      &:hover{
+      /*&:hover{
         width: 230px;
         height: 230px;
-      }
+      }*/
       &.left {
         float: left;
         box-shadow: -25px 25px $color-info;
