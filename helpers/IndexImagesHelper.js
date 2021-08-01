@@ -53,7 +53,7 @@ export const drawIndexImages = () => {
                 image.ImgObj.width, image.ImgObj.width, // Crop to width square 
                 image.offsetLeft, image.offsetTop + 35, // Position at real offsetLeft and offsetTop + 35px to get correct height 
                 200, 200); // Scale to 200px
-                if(!image.imgData) scanImgData(image);
+                if(!image.imgData) setTimeout(() => scanImgData(image), 500);
         } else pixelate(image);
     }
 };
