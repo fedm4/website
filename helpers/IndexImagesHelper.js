@@ -47,7 +47,7 @@ const convertToGrayScale = imageData => {
 
 export const drawIndexImages = () => {
     for(let image of images) {
-        if(!image.hovering) {
+        if(!image.hovering || !image.imgData?.data) {
             ctx.drawImage(image.ImgObj, 
                 0, 200, // Start at 0 200 from top left of the image
                 image.ImgObj.width, image.ImgObj.width, // Crop to width square 
@@ -62,7 +62,6 @@ let currentSampleSize = 1;
 let delay = 0;
 
 const pixelate = image => {
-    if(!image.imgData?.data) return;
     const position = { x: image.offsetLeft, y: image.offsetTop + 35 };
     for (let y = 0; y < 200; y += currentSampleSize) {
         position.x = image.offsetLeft;
