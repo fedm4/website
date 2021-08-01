@@ -51,7 +51,6 @@ const setResizeObserver = () => {
 const reload = () => {
     if(!initiated) return;
     cancelAnimation();
-    defineCanvas();
     clearNavItemMeasurements();
     measureNavItems();
     startNavParticles();

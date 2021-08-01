@@ -14,9 +14,7 @@ const handleMouseMove = e => {
             (e.clientY >= image.offsetTop +35 && e.clientY <= image.offsetTop + 35 + 200)) {
                 image.hovering = true;
                 hovering = true;
-            } else {
-                image.hovering = false;
-            }
+            } else image.hovering = false;
     }
     if(!hovering) currentSampleSize = 1;
 }
@@ -29,7 +27,7 @@ export const loadIndexImages = () => {
         image.ImgObj = img;
         image.hovering = false;
     }
-
+    canvas.removeEventListener("mousemove", handleMouseMove);
     canvas.addEventListener("mousemove", handleMouseMove);
 }
 
@@ -58,7 +56,6 @@ export const drawIndexImages = () => {
                 if(!image.imgData) scanImgData(image);
         } else pixelate(image);
     }
-    if(images.length) if(!hovering) hovering = true;
 };
 const sampleSize = 8;
 let currentSampleSize = 1;
